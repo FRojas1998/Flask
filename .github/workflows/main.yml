@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+  
+  
+    
+    variables: 
+       IMAGE_NAME= 'dockerflask'
 
 jobs:
   build-and-test:
@@ -11,14 +16,20 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        
       - name: Install dependencies
-        run: npm install
+        run: |
+              python -m pip install --upgrade pip 
+              pip install -r requirements.txt
+              
       - name: Build
-        run: npm run build
+        run:  | 
+               docker build -t dockerflask 
       - name: Test
         run: npm run test
       - name: Deploy
         uses: actions/deploy@v1
+        
         with:
           provider: GitHub Pages
           target: main
