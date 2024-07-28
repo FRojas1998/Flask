@@ -15,7 +15,7 @@ jobs:
         run: pip install -r Flask/requirements.txt
 
       - name: Build Docker image
-        run: docker buildx build -t dockerflask ./Flask/Dockerfile
+        run: docker build -t dockerflask Flask/Dockerfile
 
       - name: Run Docker container
         run: docker run -d --name dockerflask -p 8080:8080 dockerflask
