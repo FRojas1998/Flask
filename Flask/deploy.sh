@@ -18,7 +18,7 @@ CONTAINER_NAME="Contenedor_dockerflask"
 
 # Paso 1: Crear la imagen Docker de la aplicación
 echo "Construyendo la imagen Docker..."
-docker build -t $IMAGE_NAME /c/Users/felip/flask
+docker build -t $IMAGE_NAME /c/Users/felip/gitFlask/Flask
 
 # Paso 2: Verificar si el contenedor ya está en ejecución y detenerlo
 if [ "$(docker ps -q -f name=$CONTAINER_NAME)" ]; then
