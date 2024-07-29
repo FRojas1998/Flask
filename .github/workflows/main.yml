@@ -33,12 +33,12 @@ jobs:
 
       - name: Build Docker image
         run: docker buildx build --platform linux/amd64 -t dockerflask Flask/  
-
-      - name: Test application
-        run: docker exec $IMAGENDOCKERHUB curl -f http://localhost:8080
         
       - name: Run Docker container
         run: docker run -d --name $CONTENEDOR -p 8080:8080 $IMAGENDOCKERHUB
+        
+      - name: Test application
+        run: docker exec $IMAGENDOCKERHUB curl -f http://localhost:8080
       
       - name: Check container status
         run: docker ps
