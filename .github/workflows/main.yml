@@ -41,7 +41,7 @@ jobs:
         run: sleep 25
         
       - name: Test application
-        run: docker exec $IMAGENDOCKERHUB curl -v http://localhost:8080      
+        run: docker exec $IMAGENDOCKERHUB curl -v https://hub.docker.com/r/feliperojas1998/dockerflask     
       
       - name: Check container status
         run: docker ps
