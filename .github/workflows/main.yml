@@ -35,5 +35,5 @@ jobs:
 
       - name: Test application
         #run: curl http://localhost:8080
-        run: curl http://127.0.0.1:5000 
+        run:  curl http://localhost:5000
       
