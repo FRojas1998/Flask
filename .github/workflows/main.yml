@@ -36,5 +36,5 @@ jobs:
 
       - name: Test application
         #run: curl http://localhost:8080
-        run:  docker exec -it contenedor_dockerflask curl http://localhost:5000
+        run:  docker exec -it contenedor_dockerflask curl http://localhost:8080
       
