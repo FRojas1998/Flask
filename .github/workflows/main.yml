@@ -42,7 +42,7 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push -u ${{ secrets.DOCKER_USERNAME }}/$IMAGENDOCKERHUB
+          docker push -u feliperojas1998/$IMAGENDOCKERHUB:latest
                 
       
        
