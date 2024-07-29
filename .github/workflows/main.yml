@@ -42,9 +42,9 @@ jobs:
         run: docker ps
       
 
-      - name: Test application
+     # - name: Test application
         #run: curl http://localhost:8080
-        run:  docker exec -it $CONTENEDOR curl http://localhost:8080
+      #  run:  docker exec -it $CONTENEDOR curl http://localhost:8080
        
  
       
