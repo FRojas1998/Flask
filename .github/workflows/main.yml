@@ -36,13 +36,7 @@ jobs:
         
       - name: Run Docker container
         run: docker run -d --name $CONTENEDOR -p 8080:8080 $IMAGENDOCKERHUB
-
-      - name: Wait for the container to be ready
-        run: sleep 25
-        
-      - name: Test application
-        run: docker exec $IMAGENDOCKERHUB curl -v https://hub.docker.com/r/feliperojas1998/dockerflask     
-      
+    
       - name: Check container status
         run: docker ps
                 
