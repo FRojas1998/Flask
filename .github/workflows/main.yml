@@ -40,6 +40,10 @@ jobs:
       
       - name: Check container status
         run: docker ps
+        
+      - name: Run tests
+        run: |
+          pytest
       
 
      # - name: Test application
