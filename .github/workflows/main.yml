@@ -12,7 +12,7 @@ jobs:
         run: echo "CONTENEDOR=contenedor_dockerflask" >> $GITHUB_ENV
 
       - name: Save a value to an environment file
-        run: echo "IMAGENDOCKERHUB=feliperojas1998/dockerflask:latest" >> $GITHUB_ENV
+        run: echo "IMAGENDOCKERHUB= feliperojas1998/dockerflask:latest" >> $GITHUB_ENV
         
       - name: Checkout code
         uses: actions/checkout@v2
@@ -35,7 +35,7 @@ jobs:
 
       - name: Run Docker container
       #  run: docker run -d --name contenedor_dockerflask -p 8080:8080 feliperojas1998/dockerflask:latest
-        run: docker run -d --name $Contenedor -p 8080:8080 $IMAGENDOCKERHUB
+        run: docker run -d --name $CONTENEDOR -p 8080:8080 $IMAGENDOCKERHUB
       
       - name: Check container status
         run: docker ps
