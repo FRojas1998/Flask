@@ -16,7 +16,7 @@ jobs:
 
       
       - name: Build Docker image
-        run: docker build -t dockerflask:latest ./Flask/Dockerfile
+        run: docker build -t dockerflask:latest Flask\Dockerfile
 
       - name: Run Docker container
         run: docker run -d --name dockerflask -p 8080:8080 dockerflask
