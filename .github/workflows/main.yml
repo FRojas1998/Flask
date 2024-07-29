@@ -27,13 +27,12 @@ jobs:
         run: docker buildx build --platform linux/amd64 -t dockerflask Flask/  
 
 
-
-        #- name: Run Docker container 
-        #  run: |
-        #  docker run -d --name my-container -p 8080:80 my-image
-
-
       - name: Run Docker container
         run: docker run -d --name contenedor_dockerflask -p 8080:8080 feliperojas1998/dockerflask:latest
-        
+
+      - name: Check container status
+        run: docker ps
+
+      - name: Test application
+        run: curl http://localhost:8080/metrics
       
