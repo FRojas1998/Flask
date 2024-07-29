@@ -12,7 +12,7 @@ jobs:
         run: echo "CONTENEDOR=contenedor_dockerflask" >> $GITHUB_ENV,
        
 
-      - name: Save a value to an environment file
+      - name: Save a value to an environment file 
         run: echo "IMAGENDOCKERHUB= feliperojas1998/dockerflask:latest" >> $GITHUB_ENV
         
       - name: Checkout code
