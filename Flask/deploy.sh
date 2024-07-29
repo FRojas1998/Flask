@@ -14,7 +14,7 @@
 
 # Nombre de la imagen y del contenedor
 IMAGE_NAME="dockerflask"
-CONTAINER_NAME="Contenedor_dockerflask"
+CONTAINER_NAME="contenedor_dockerflask"
 
 # Paso 1: Crear la imagen Docker de la aplicación
 echo "Construyendo la imagen Docker..."
