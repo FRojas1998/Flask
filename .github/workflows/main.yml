@@ -16,7 +16,7 @@ jobs:
         run: echo "IMAGENDOCKERHUB= feliperojas1998/dockerflask:latest" >> $GITHUB_ENV
         
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: Install dependencies 
         run: pip install -r Flask/requirements.txt
