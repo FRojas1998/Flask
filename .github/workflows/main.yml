@@ -32,6 +32,9 @@ jobs:
 
       - name: Check container status
         run: docker ps
+      
+      - name: Wait for application to start
+        run: sleep 30
 
       - name: Test application
         #run: curl http://localhost:8080
