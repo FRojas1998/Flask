@@ -41,18 +41,13 @@ jobs:
         run: sleep 25
         
       - name: Test application
-        #run: docker exec $CONTENEDOR curl -v http://localhost:8080
-        run: docker exec $CONTENEDOR curl -v http://localhost:8080/metrics
-      
-       
+        run: docker exec $IMAGENDOCKERHUB curl -v http://localhost:8080      
       
       - name: Check container status
         run: docker ps
                 
       
        
-        #run: curl http://localhost:8080
-      #  run:  docker exec -it $CONTENEDOR curl http://localhost:8080
-          
+    
  
       
