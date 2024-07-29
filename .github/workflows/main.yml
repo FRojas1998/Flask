@@ -39,6 +39,10 @@ jobs:
     
       - name: Check container status
         run: docker ps
+
+      - name: Push Docker image
+        run: |
+          docker push feliperojas1998/$IMAGENDOCKERHUB
                 
       
        
