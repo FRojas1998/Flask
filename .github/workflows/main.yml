@@ -41,8 +41,8 @@ jobs:
         run: sleep 25
         
       - name: Test application
-        run: docker exec $CONTENEDOR curl -v http://localhost:8080
-
+        #run: docker exec $CONTENEDOR curl -v http://localhost:8080
+        run: docker exec $CONTENEDOR curl -v http://localhost:8080/metrics
       
        
       
