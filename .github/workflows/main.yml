@@ -20,7 +20,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 'latest'
+          python-version: '3.12.4'
 
       - name: Install dependencies 
         run: pip install -r Flask/requirements.txt
