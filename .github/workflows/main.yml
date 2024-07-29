@@ -28,7 +28,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }} 
 
       - name: Build Docker image
-        run: docker buildx build --platform linux/amd64 -t dockerflask:latest Flask/  
+        run: docker buildx build --platform linux/amd64 -t dockerflask Flask/  
 
 
 
