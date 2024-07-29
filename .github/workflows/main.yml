@@ -28,11 +28,16 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }} 
 
       - name: Build Docker image
-        run: docker buildx build --platform linux/amd64 -t dockerflask:latest Flask/Dockerfile  
+        run: docker buildx build --platform linux/amd64 -t dockerflask:latest Flask/  
+
+
+
+
+
 
       - name: Run Docker container
         run: docker run -d --name dockerflask -p 8080:8080 dockerflask
-
+        
       - name: Deploy to production
         uses: docker/login-action@v1
         
