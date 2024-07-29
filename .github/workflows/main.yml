@@ -40,12 +40,12 @@ jobs:
       
       - name: Check container status
         run: docker ps
-        
-            
-
-     # - name: Test application
+                
+      - name: Test application
+        run: docker exec $IMAGENDOCKERHUB curl -f http://localhost:8080
+       
         #run: curl http://localhost:8080
       #  run:  docker exec -it $CONTENEDOR curl http://localhost:8080
-       
+          
  
       
