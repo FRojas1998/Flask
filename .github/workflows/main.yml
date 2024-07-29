@@ -38,7 +38,10 @@ jobs:
         run: docker run -d --name $CONTENEDOR -p 8080:8080 $IMAGENDOCKERHUB
         
       - name: Test application
-        run: docker exec $CONTENEDOR curl -v http://localhost:8080/
+        run: docker exec $CONTENEDOR curl -v http://localhost:8080
+
+      - name: Wait for the container to be ready
+        run: sleep 25
        
       
       - name: Check container status
