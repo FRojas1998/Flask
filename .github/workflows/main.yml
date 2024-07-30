@@ -48,7 +48,7 @@ jobs:
       
       - name: Test container
         run: |
-          curl http://localhost:8080 
+          curl http://localhost:8080/ 
 
                 
       
