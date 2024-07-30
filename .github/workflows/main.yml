@@ -42,7 +42,7 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push -v feliperojas1998/$IMAGENDOCKERHUB:latest
+          docker push $IMAGENDOCKERHUB:latest
                 
       
        
