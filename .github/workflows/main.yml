@@ -52,7 +52,7 @@ jobs:
       
       - name: Test container
         run: |
-          curl app:8080 
+          curl http://127.0.0.1:8080 
 
                 
       
