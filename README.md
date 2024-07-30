@@ -22,7 +22,7 @@ env\Scripts\activate   |  . env/bin/activate
 
 
 # Sección2: Docker
-- Primero se crea el archivo Dockerfile.
+- Primero se crea el archivo Dockerfile con la finalidad de crear un directorio de trabajo y agregar las diferentes dependencias para dockerizar la aplicación y correrla en un puerto específico.
 
 
 
