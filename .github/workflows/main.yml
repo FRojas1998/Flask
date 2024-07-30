@@ -34,12 +34,14 @@ jobs:
       - name: Build Docker image
         run: docker buildx build --platform linux/amd64 -t dockerflask Flask/
 
-      - name: Push Docker image
-        run: |
-          docker push feliperojas1998/dockerflask:latest
+      
         
       - name: Run Docker container
         run: docker run -d --name $CONTENEDOR -p 8080:8080 $IMAGENDOCKERHUB
+
+      - name: Push Docker image
+        run: |
+          docker push feliperojas1998/dockerflask:latest
     
       - name: Check container status
         run: docker ps
