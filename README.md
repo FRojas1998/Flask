@@ -7,7 +7,7 @@ Windows             |  macOS/Linux
 py -3 -m venv env   |  python3 -m venv env
 
 
-Para activar el entorno virtual dentro la carpeta Flask
+Para activar el entorno virtual dentro de la carpeta Flask
 
 Windows             |  macOS/Linux
 :-------------------------:|:-------------------------:
@@ -32,3 +32,6 @@ env\Scripts\activate   |  . env/bin/activate
 
 # Sección4: Automatización CI/CD
 - Crear un archivo .github/workflows/main.yml para automatizar el proceso de construcción y pruebas.
+
+# Información Relevante 
+-Todos los archivos están comentados.
