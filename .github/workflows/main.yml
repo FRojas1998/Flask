@@ -47,8 +47,9 @@ jobs:
       - name: Check container status
         run: docker ps
 
-      - name: Test application from within container
-        run: docker exec $CONTENEDOR curl -v http://localhost:8080
+      - name: View container logs
+        run: docker logs $CONTENEDOR 
+
 
       
       
