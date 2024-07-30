@@ -1,4 +1,4 @@
-
+#Contiene las dependencias necesarias para ejecutar la aplicación Flask.
 Flask==2.0.1
 psutil==5.8.0
 Werkzeug==2.2

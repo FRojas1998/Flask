@@ -1,9 +1,12 @@
+#biblioteca flask y para crear una respuesta json
 from flask import Flask , jsonify
+
+#biblioteca para mostrar información del sistema
 import psutil
 
 app = Flask(__name__)
 
-
+#ruta para la aplicación y función que obtiene las métricas
 @app.route('/')
 def get_metrics():
     cpu_percent = psutil.cpu_percent()
@@ -16,10 +19,7 @@ def get_metrics():
 
     return jsonify(metrics)
 
+#ejecución de la aplicación
 if __name__ == '__main__':
-    
-    app.run(host='0.0.0.0', port=8080, debug=True)
-
-#if __name__ == '__main__':
     #app.run(debug=True)
-#    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8080, debug=True)
