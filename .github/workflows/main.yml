@@ -32,7 +32,11 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }} 
 
       - name: Build Docker image
-        run: docker buildx build --platform linux/amd64 -t dockerflask Flask/  
+        run: docker buildx build --platform linux/amd64 -t dockerflask Flask/
+
+      - name: Push Docker image
+        run: |
+          docker push feliperojas1998/dockerflask
         
       - name: Run Docker container
         run: docker run -d --name $CONTENEDOR -p 8080:8080 $IMAGENDOCKERHUB
@@ -40,9 +44,6 @@ jobs:
       - name: Check container status
         run: docker ps
 
-      - name: Push Docker image
-        run: |
-          docker push feliperojas1998/dockerflask:latest
                 
       
        
