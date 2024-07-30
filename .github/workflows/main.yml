@@ -47,8 +47,8 @@ jobs:
       - name: Check container status
         run: docker ps
 
-      - name: View container logs
-        run: docker exec $CONTENEDOR curl http://localhost:8080
+      #- name: View container logs
+       # run: docker exec $CONTENEDOR curl http://localhost:8080
 
 
 
