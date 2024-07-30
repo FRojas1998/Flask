@@ -27,7 +27,8 @@ env\Scripts\activate   |  . env/bin/activate
 
 
 # Sección3: Shell Script
-- Crear el archivo deploy.sh
+- Crear el archivo deploy.sh en donde se va a crear una imagen Docker de la aplicación, iniciar un contenedor Docker y	asegurar que el contenedor se inicie automáticamente al reiniciar el servidor.
+
 - Lo siguiente es cambiar los permisos del archivo deploy.sh con el comando **chmod +x deploy.sh** y ejecutarlo **./deploy.sh**
 
 # Sección4: Automatización CI/CD
