@@ -48,7 +48,7 @@ jobs:
         run: docker ps
 
       - name: View container logs
-        run: docker logs $CONTENEDOR 
+        run: docker logs contenedor_dockerflask 
 
 
       
