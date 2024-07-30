@@ -13,8 +13,11 @@ Windows             |  macOS/Linux
 :-------------------------:|:-------------------------:
 env\Scripts\activate   |  . env/bin/activate
 
-Luego se installa Flask:  #pip install Flask      
- 
+
+
+- Luego se instala Flask: # pip install FLask
+- Se instalará automáticamente las dependencias necesarias para ejecutar la aplicación Flask con # pip install -r requirements.txt
+- Por ultimo se ejecuta con el comando # python app.py  
 
 
 
