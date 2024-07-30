@@ -33,6 +33,7 @@ env\Scripts\activate   |  . env/bin/activate
 
 # Sección4: Automatización CI/CD
 - Crear un archivo .github/workflows/main.yml para automatizar el proceso de construcción y pruebas.
-
+- Donde se van a extraer el código del repositorio en el directorio raíz para luego instalar las dependencias, construir la imagen a partir de un código fuente, se ejecuta el contenedor en el puerto específico y  desplegar la imagen hacia dockerhub con su etiqueta.
+  
 # Información Relevante
 -Todos los archivos están comentados.
