@@ -42,14 +42,17 @@ jobs:
       - name: Push Docker image
         run: |
           docker push feliperojas1998/dockerflask:latest
-          sleep 10
+          
     
       - name: Check container status
         run: docker ps
+     
+      - name: Wait for the application to start
+        run: sleep 10
       
       - name: Test container
         run: |
-          curl http://localhost:8080/ 
+          curl http://localhost:8080 
 
                 
       
