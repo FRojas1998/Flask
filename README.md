@@ -22,13 +22,13 @@ env\Scripts\activate   |  . env/bin/activate
 
 
 # Sección2: Docker
--Primero se crea el archivo Dockerfile
+- Primero se crea el archivo Dockerfile
 
 
 
 # Sección3: Shell Script
--Crear el archivo deploy.sh
--Lo siguiente es cambiar los permisos del archivo deploy.sh con el comando **chmod +x deploy.sh** y ejecutarlo **./deploy.sh**
+- Crear el archivo deploy.sh
+- Lo siguiente es cambiar los permisos del archivo deploy.sh con el comando **chmod +x deploy.sh** y ejecutarlo **./deploy.sh**
 
 # Sección4: Automatización CI/CD
 
