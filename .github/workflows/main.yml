@@ -48,7 +48,7 @@ jobs:
         run: docker ps
 
       - name: View container logs
-        run: docker exec -it $CONTENEDOR curl http://localhost:8080
+        run: docker exec $CONTENEDOR curl http://localhost:8080
 
 
 
