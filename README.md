@@ -4,15 +4,18 @@ Se crea una carpeta llamada Flask y dentro se ejecuta un entorno virtual en pyth
 
 Windows             |  macOS/Linux
 :-------------------------:|:-------------------------:
-![](py -3 -m venv env   |  ![](python3 -m venv env)
+py -3 -m venv env   |  python3 -m venv env
 
-      python3 -m venv env
 
 Para activar el entorno virtual dentro la carpeta Flask
 
-venv\Scripts\activate (windows)   source env/Scripts/activate  (git bash)   . venv/bin/activate (ubuntu)
+Windows             |  macOS/Linux
+:-------------------------:|:-------------------------:
+env\Scripts\activate   |  . env/bin/activate
+
+Luego se installa Flask:  #pip install Flask      
  
-pip install Flask
+
 
 
 # Sección2: Docker
