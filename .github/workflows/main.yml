@@ -47,11 +47,9 @@ jobs:
       - name: Check container status
         run: docker ps
      
-      - name: Wait for the application to start
-        run: sleep 10
       
-      - name: Inspect Docker container
-        run: docker inspect $CONTENEDOR
+      
+      
 
 
           
