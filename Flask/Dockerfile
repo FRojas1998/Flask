@@ -1,16 +1,16 @@
-FROM python:latest  #Se ocupa la imagen con la versión más nueva de python
+FROM python:latest  
 
-LABEL autor="Felipe Rojas"   #autor del Dockerfile
+LABEL autor="Felipe Rojas"   
 
-WORKDIR /app    #Directorio de Trabajo
+WORKDIR /app    
 
-COPY requirements.txt requirements.txt       #Se copia el archivo en el directorio de trabajo
+COPY requirements.txt requirements.txt       
 
-RUN pip install -r requirements.txt        #Se instalan las dependencias de la aplicación
+RUN pip install -r requirements.txt        
 
-COPY . .   #Copiando el codigo de la aplicación en el directorio.
+COPY . .   
 
 #EXPOSE 5000
-EXPOSE 8080   #Se expone la aplicación en el puerto especifico
+EXPOSE 8080   
 
-CMD ["python", "app.py"]     #Se ejecuta la aplicación
+CMD ["python", "app.py"]     
