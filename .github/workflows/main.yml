@@ -42,7 +42,7 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push $IMAGENDOCKERHUB:latest
+          docker push feliperojas1998/dockerflask:tagname
                 
       
        
