@@ -37,7 +37,3 @@ CMD ["python", "app.py"]
 
 
 
-<<<<<<< HEAD
-CMD ["python", "app.py"] 
-=======
->>>>>>> 8684e5b970c01a9d2583eb74902cad041f29be0f
