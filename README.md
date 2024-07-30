@@ -22,7 +22,7 @@ env\Scripts\activate   |  . env/bin/activate
 
 
 # Sección2: Docker
-- Primero se crea el archivo Dockerfile
+- Primero se crea el archivo Dockerfile.
 
 
 
@@ -31,4 +31,4 @@ env\Scripts\activate   |  . env/bin/activate
 - Lo siguiente es cambiar los permisos del archivo deploy.sh con el comando **chmod +x deploy.sh** y ejecutarlo **./deploy.sh**
 
 # Sección4: Automatización CI/CD
-
+- Crear un archivo .github/workflows/main.yml para automatizar el proceso de construcción y pruebas.
