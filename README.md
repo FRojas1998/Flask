@@ -4,7 +4,7 @@ Se crea una carpeta llamada Flask y dentro se ejecuta un entorno virtual en pyth
 
 Windows             |  macOS/Linux
 :-------------------------:|:-------------------------:
-**py -3 -m venv env**   |  python3 -m venv env
+py -3 -m venv env   |  python3 -m venv env
 
 
 Para activar el entorno virtual dentro la carpeta Flask
@@ -15,15 +15,20 @@ env\Scripts\activate   |  . env/bin/activate
 
 
 
-- Luego se instala Flask: # pip install FLask
-- Se instalará automáticamente las dependencias necesarias para ejecutar la aplicación Flask con # pip install -r requirements.txt
-- Por ultimo se ejecuta con el comando # python app.py  
+- Luego se instala Flask: **pip install FLask**
+- Se instalará automáticamente las dependencias necesarias para ejecutar la aplicación Flask con **pip install -r requirements.txt**
+- Por ultimo se ejecuta con el comando **python app.py**  
 
 
 
 # Sección2: Docker
+-Primero se crea el archivo Dockerfile
+
+
 
 # Sección3: Shell Script
+-Crear el archivo deploy.sh
+-Lo siguiente es cambiar los permisos del archivo deploy.sh con el comando **chmod +x deploy.sh** y ejecutarlo **./deploy.sh**
 
 # Sección4: Automatización CI/CD
 
