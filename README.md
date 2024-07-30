@@ -33,5 +33,5 @@ env\Scripts\activate   |  . env/bin/activate
 # Sección4: Automatización CI/CD
 - Crear un archivo .github/workflows/main.yml para automatizar el proceso de construcción y pruebas.
 
-**Información Relevante** 
+# Información Relevante
 -Todos los archivos están comentados.
