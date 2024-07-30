@@ -2,7 +2,11 @@
 
 Se crea una carpeta llamada Flask y dentro se ejecuta un entorno virtual en python para gestionar dependencias y configuraciones de proyectos de manera aislada.
 
-py -3 -m venv env (windows)       python3 -m venv env
+Windows             |  macOS/Linux
+:-------------------------:|:-------------------------:
+![](py -3 -m venv env   |  ![](python3 -m venv env)
+
+      python3 -m venv env
 
 Para activar el entorno virtual dentro la carpeta Flask
 
