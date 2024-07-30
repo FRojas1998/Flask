@@ -45,6 +45,10 @@ jobs:
     
       - name: Check container status
         run: docker ps
+      
+      - name: Test container
+        run: |
+          curl http://localhost:8080
 
                 
       
